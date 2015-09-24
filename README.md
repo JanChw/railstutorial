@@ -1,28 +1,24 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**ruby on rails tutorial(rails4.2.4/ruby2.2.2)**
+<pre><code>
+	
+$ rails new railstutorial --skip-test-unit //加参数，禁用默认的测试框架
+$ cd railstutorial
+$ subl .
+//修改gemfile文件
+//在development和test组中添加 gem 'rspec-rails'
+//在test组中添加gem ‘selenium-webdriver’ 和 gem ‘capybara’
+$ bundle
+$ rails g rspec:install //使用rspec
+//创建仓库
+$ git init
+$ git add .
+$ git commit -m 'Initial commit'
+$ git mv README.rdoc README.md
+$ git commit -am 'Improve the README'
+$ git remote add origin https://github.com/<username>/railsturorial.git
+$ git push -u origin master
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+</code></pre>
+
