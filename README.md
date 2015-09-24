@@ -1,6 +1,6 @@
 **ruby on rails tutorial(rails4.2.4/ruby2.2.2)**
 <pre><code>
-	
+
 $ rails new railstutorial --skip-test-unit //加参数，禁用默认的测试框架
 $ cd railstutorial
 $ subl .
@@ -18,6 +18,17 @@ $ git commit -am 'Improve the README'
 $ git remote add origin https://github.com/<username>/railsturorial.git
 $ git push -u origin master
 
+//建立分支
+$ git checkout -b static-pages
+$ rails g controller StaticPages home help --no-test-framework //加参数，禁止自动生成rspec测试代码
+//相关的操作
+//销毁生成的控制器 rails destory controller StaticPages home help
+//新建模型 rails g model User name:string age:integer
+//销毁模型 rails destroy model User
+//数据库相关
+// rake db:migrate
+// rake db:rollback
+// rake db:migrate VERSION=0(或其他数字)
 
 
 </code></pre>
