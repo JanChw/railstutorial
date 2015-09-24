@@ -18,7 +18,10 @@ $ git commit -am 'Improve the README'
 $ git remote add origin https://github.com/<username>/railsturorial.git
 $ git push -u origin master
 
+</code></pre>
+
 //建立分支
+<pre><code>
 $ git checkout -b static-pages
 $ rails g controller StaticPages home help --no-test-framework //加参数，禁止自动生成rspec测试代码
 //相关的操作
@@ -29,7 +32,12 @@ $ rails g controller StaticPages home help --no-test-framework //加参数，禁
 // rake db:migrate
 // rake db:rollback
 // rake db:migrate VERSION=0(或其他数字)
-
-
 </code></pre>
+
+//测试部分
+//配置[capybara](https://github.com/jnicklas/capybara),见官网
+<pre><code>
+$ rails g integration_test static_pages
+</code></pre>
+
 
