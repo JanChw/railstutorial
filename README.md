@@ -40,4 +40,9 @@ $ rails g controller StaticPages home help --no-test-framework //加参数，禁
 $ rails g integration_test static_pages
 </code></pre>
 
+//页面布局
+<pre>
+在gemfile中添加boostrap-sass
+gem "bootstrap-sass" "3.2.02"
+</pre>
 
