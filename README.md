@@ -45,4 +45,4 @@ $ rails g integration_test static_pages
 在gemfile中添加boostrap-sass
 gem "bootstrap-sass" "3.2.02"
 </pre>
-//测试相关的函数:subject before should have_content have_title 
+//测试相关的函数:subject before visit should have_content have_title 
