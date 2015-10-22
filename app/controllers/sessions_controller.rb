@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
 		if user && user.authenticate(params[:session][:password])
 			sign_in user
 			flash[:success] = "Welcome to RailsTutotial!"
-			redirect_to user
+			redirect_back_to user
 		else
 			flash.now[:danger] = 'Invalid email/password combination'
 			render 'new'

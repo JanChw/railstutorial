@@ -25,6 +25,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # custom gem package
 gem 'bootstrap-sass', '3.2.0.2'
+#fake gem
+gem 'faker'
+# will-paginate
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Use ActiveModel has_secure_password
  gem 'bcrypt', '~> 3.1.7'
 
